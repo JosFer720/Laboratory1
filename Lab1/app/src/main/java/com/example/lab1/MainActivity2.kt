@@ -32,7 +32,15 @@ class MainActivity : AppCompatActivity() {
 
     //NO PUEDO PROBARLO PORQUE NO TENGO TELEFONO ANDROID PERO DEBERIA DE FUNCIONAR
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
+        //TASK 3
+        printTeamDetails(Team.MERCEDES)
+        printTeamDetails(Team.RED_BULL)
+        printTeamDetails(Team.FERRARI)
+    }
 
     private fun printTeamDetails(team: Team) {
         //TASK 2
